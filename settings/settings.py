@@ -55,7 +55,8 @@ THIRD_APPS = [
 LOCAL_APPS = [
     'apps.schedule',
     'apps.demo',
-    'spider'
+    'spider',
+    'apps.spider_view'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + LOCAL_APPS
