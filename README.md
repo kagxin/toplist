@@ -306,7 +306,7 @@ class DefaultResultsSetPagination(PageNumberPagination):
 ### runscript使用django_extensions支持
 > 在工程目录 `scripts/` 目录下添加新的 .py 文件, .py中要包含run()函数作为入口
 
-* run 测试script
+* run 测试scriptc
 ```bash
 python manage.py runscript sayhello
 ```

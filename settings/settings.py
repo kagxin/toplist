@@ -53,9 +53,9 @@ THIRD_APPS = [
 ]
 
 LOCAL_APPS = [
-    'apps.account',
     'apps.schedule',
-    'apps.demo'
+    'apps.demo',
+    'spider'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + LOCAL_APPS
@@ -162,9 +162,6 @@ JWT_AUTH = {
 
 ## cors
 CORS_ORIGIN_ALLOW_ALL = True
-
-## custome user
-AUTH_USER_MODEL = 'account.UserProfile'
 
 # logging settings cloghandler.ConcurrentRotatingFileHandler 可能会对性能有一定影响注意
 
