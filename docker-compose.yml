@@ -6,7 +6,7 @@ services:
         container_name: mysqldb
         environment:
             - MYSQL_ROOT_PASSWORD=root
-            - MYSQL_DATABASE=django_template
+            - MYSQL_DATABASE=toplist
         restart: always
         command: [
             '--character-set-server=utf8mb4',
@@ -19,13 +19,13 @@ services:
         container_name: redisdb
         restart: always
 
-    django_template:
-        container_name: django_template_app
+    toplist:
+        container_name: toplist_app
         build:
             context: .
             dockerfile: Dockerfile
         ports:
-            - "7000:8000"
+            - "9001:8000"
         environment:
             - mysqlhost=mysqldb
             - redishost=redisdb

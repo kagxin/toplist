@@ -11,3 +11,11 @@
 ## 是另外一个开源项目[TopList](https://github.com/timeromantic/TopList)的python实现
 ref: 
 https://github.com/timeromantic/TopList
+
+## 快速开始
+* python manage.py migrate
+* python manage.py runserver
+* celery -A settings worker -l info
+* celery -A settings beat -l info
+* django admin 添加定时任务 apps.schedule.tasks.fetch，一分钟一次
+* 访问 http://localhost:8000
