@@ -2,7 +2,7 @@ import os
 """
 create database django_template character set utf8;
 """
-mysql_host = 'localhost'
+mysql_host = os.environ.get('mysqlhost', '')
 DATABASES = {
     'default': {
         'NAME': 'toplist',
@@ -13,7 +13,7 @@ DATABASES = {
         'CHARSET': 'utf8'
     }
 }
-redis_host = 'localhost'
+redis_host = os.environ.get('redishost', '127.0.0.1')
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
