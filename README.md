@@ -19,3 +19,7 @@ https://github.com/timeromantic/TopList
 * celery -A settings beat -l info
 * django admin 添加定时任务 apps.schedule.tasks.fetch，一分钟一次
 * 访问 http://localhost:8000
+
+## 在线示例
+* [在线示例](http://47.94.110.194:9001)
+
